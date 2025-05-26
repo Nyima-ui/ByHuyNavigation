@@ -11,9 +11,28 @@
   src: url(./fonts/a02a323226559df3-s.p.ttf);
 }
 
-body{
-  background-color: #E8E8E3;
+body {
+  background-color: #e8e8e3;
+  padding-inline: 37px;
+  position: relative;
 }
-nav{
+nav {
   font-family: "_montreal_d58f00_1";
+}
+.mobileNav {
+  font-family: "_montreal_d58f00_1";
+}
+
+
+.button{
+  all: unset;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 20px 36px;
+  color: #000;
+  border-radius: 100px;
+  font-family: 900;
+}
+.button:hover{
+  background-color: #c9ff18;
 }
