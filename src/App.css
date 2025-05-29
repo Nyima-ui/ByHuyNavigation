@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @font-face {
   font-family: "_montreal_d58f00_1";
   src: url(./fonts/772d87814c6d4363-s.p.ttf);
@@ -15,6 +16,7 @@ body {
   background-color: #e8e8e3;
   padding-inline: 37px;
   position: relative;
+  overflow-x: hidden;
 }
 nav {
   font-family: "_montreal_d58f00_1";
@@ -24,37 +26,4 @@ nav {
 }
 
 
-.button{
-  cursor: pointer;
-  background-color: #393632;
-  padding: 20px 36px;
-  color: #E1E1DC;
-  border-radius: 100px;
-  position: relative;
-  overflow: clip;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-/* .buttonTitle {
-  margin: 0;
-  z-index: 2;
-} */
-.buttonTitle2 {
-  height: 100%;
-  top: 0;
-  /* transform: translateY(-50%); */
-  position: absolute;
-  display: flex;
-  align-items: center;
-  z-index: 2;
-}
-.buttonBackground {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  background-color: #8C8C73;
-}
+
