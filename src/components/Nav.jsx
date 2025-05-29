@@ -21,7 +21,7 @@ const Nav = () => {
 
   const { x, y } = position;
   return (
-    <nav className="flex justify-between py-6 text-xl ">
+    <nav className="flex justify-between py-6 text-xl px-9.5">
       <motion.a
         href="#"
         className="font-bold text-[#171715]"

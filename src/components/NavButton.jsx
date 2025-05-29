@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const NavButton = () => {
+const NavButton = ({ isInView }) => {
   const [isClicked, setisClicked] = useState(false);
   return (
     <motion.div
       className="size-16 p-4  rounded-full bg-[#BBBBAE] flex flex-col justify-center gap-2 items-center cursor-pointer hover:transform hover:scale-90 transition-all duration-500 group"
+      initial={{ scale: 0 }}
+      animate={{ scale: isInView ? 1 : 0 }}
+      transition={{ type: "linear", duration: 0.25, ease: "easeOut" }}
       onClick={() => setisClicked((prev) => !prev)}
     >
       <motion.span
