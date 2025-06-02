@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const NavButton = ({ isInView }) => {
-  const [isClicked, setisClicked] = useState(false);
+const NavButton = ({ isInView, isClicked, setisClicked, navButtonRef }) => {
   return (
     <motion.div
+      ref={navButtonRef}
       className="size-16 p-4  rounded-full bg-[#BBBBAE] flex flex-col justify-center gap-2 items-center cursor-pointer hover:transform hover:scale-90 transition-all duration-500 group"
       initial={{ scale: 0 }}
       animate={{ scale: isInView ? 1 : 0 }}
